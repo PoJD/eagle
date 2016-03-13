@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.4.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="WEBP88_RJ45">
+<description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
+<pad name="RJ4512" x="-11.43" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4514" x="-8.89" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4516" x="-6.35" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4518" x="-3.81" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4519" x="-2.54" y="7.59" drill="0.9" shape="square" rot="R180"/>
+<pad name="RJ4517" x="-5.08" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4515" x="-7.62" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4513" x="-10.16" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4529" x="11.43" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4527" x="8.89" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4525" x="6.35" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4523" x="3.81" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4522" x="2.54" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4524" x="5.08" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4526" x="7.62" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4528" x="10.16" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4511" x="-12.7" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ45110" x="-1.27" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ4521" x="1.27" y="7.59" drill="0.9" shape="square" rot="R270"/>
+<pad name="RJ45210" x="12.7" y="5.05" drill="0.9" shape="square" rot="R270"/>
+<hole x="-12.7" y="-1.3" drill="3.25"/>
+<hole x="12.7" y="-1.3" drill="3.25"/>
+<hole x="0" y="8.86" drill="1.7"/>
+<hole x="-15.38" y="-4.35" drill="1.7"/>
+<hole x="15.38" y="-4.35" drill="1.7"/>
+<wire x1="-15.62" y1="9.2" x2="15.62" y2="9.2" width="0.127" layer="51"/>
+<wire x1="15.62" y1="9.2" x2="15.62" y2="-9.2" width="0.127" layer="51"/>
+<wire x1="15.62" y1="-9.2" x2="-15.62" y2="-9.2" width="0.127" layer="51"/>
+<wire x1="-15.62" y1="-9.2" x2="-15.62" y2="9.2" width="0.127" layer="51"/>
+<text x="-15.51" y="9.74" size="1.27" layer="25">&gt;NAME</text>
+<text x="-15.56" y="-10.77" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-14.49" y="7.18" size="0.8128" layer="27">1</text>
+<text x="13.82" y="4.56" size="0.8128" layer="27">10</text>
+</package>
+</packages>
+<symbols>
+<symbol name="WEBP88_RJ45">
+<description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
+<wire x1="-30.48" y1="7.62" x2="-30.48" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="30.48" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="30.48" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="RJ4512" x="-35.56" y="5.08" length="middle"/>
+<pin name="RJ4513" x="-35.56" y="2.54" length="middle"/>
+<pin name="RJ4514" x="-35.56" y="-2.54" length="middle"/>
+<pin name="RJ4515" x="-35.56" y="-5.08" length="middle"/>
+<pin name="RJ4522" x="5.08" y="5.08" length="middle"/>
+<pin name="RJ4523" x="5.08" y="2.54" length="middle"/>
+<pin name="RJ4524" x="5.08" y="-2.54" length="middle"/>
+<pin name="RJ4525" x="5.08" y="-5.08" length="middle"/>
+<pin name="RJ4516" x="-5.08" y="5.08" length="middle" rot="R180"/>
+<pin name="RJ4517" x="-5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="RJ4518" x="-5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="RJ4519" x="-5.08" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="RJ4526" x="35.56" y="5.08" length="middle" rot="R180"/>
+<pin name="RJ4527" x="35.56" y="2.54" length="middle" rot="R180"/>
+<pin name="RJ4528" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="RJ4529" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<text x="-30.48" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-30.48" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WEBP88">
+<description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
+<gates>
+<gate name="G$1" symbol="WEBP88_RJ45" x="0" y="0"/>
+</gates>
+<devices>
+<device name="GME" package="WEBP88_RJ45">
+<connects>
+<connect gate="G$1" pin="RJ4512" pad="RJ4512"/>
+<connect gate="G$1" pin="RJ4513" pad="RJ4513"/>
+<connect gate="G$1" pin="RJ4514" pad="RJ4514"/>
+<connect gate="G$1" pin="RJ4515" pad="RJ4515"/>
+<connect gate="G$1" pin="RJ4516" pad="RJ4516"/>
+<connect gate="G$1" pin="RJ4517" pad="RJ4517"/>
+<connect gate="G$1" pin="RJ4518" pad="RJ4518"/>
+<connect gate="G$1" pin="RJ4519" pad="RJ4519"/>
+<connect gate="G$1" pin="RJ4522" pad="RJ4522"/>
+<connect gate="G$1" pin="RJ4523" pad="RJ4523"/>
+<connect gate="G$1" pin="RJ4524" pad="RJ4524"/>
+<connect gate="G$1" pin="RJ4525" pad="RJ4525"/>
+<connect gate="G$1" pin="RJ4526" pad="RJ4526"/>
+<connect gate="G$1" pin="RJ4527" pad="RJ4527"/>
+<connect gate="G$1" pin="RJ4528" pad="RJ4528"/>
+<connect gate="G$1" pin="RJ4529" pad="RJ4529"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
