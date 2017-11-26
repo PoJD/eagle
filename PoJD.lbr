@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -126,14 +126,14 @@ The device meets the automotive requirements for
 high-speed (up to 1 Mb/s), low quiescent current,
 electromagnetic compatibility (EMC) and electrostatic
 discharge (ESD).</description>
-<pad name="TXD" x="-4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="VSS" x="-4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="VDD" x="-4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="RXD" x="-4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="STBY" x="4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="CANH" x="4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="CANL" x="4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="SPLIT" x="4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="TXD" x="-4" y="3.81" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="VSS" x="-4" y="1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="VDD" x="-4" y="-1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="RXD" x="-4" y="-3.81" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="STBY" x="4" y="3.81" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="CANH" x="4" y="1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="CANL" x="4" y="-1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="SPLIT" x="4" y="-3.81" drill="0.8128" diameter="1.524" shape="square"/>
 <wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.8" layer="21"/>
 <wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.8" layer="21"/>
 <wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.8" layer="21"/>
