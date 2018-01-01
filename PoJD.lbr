@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -57,7 +57,7 @@
 </layers>
 <library>
 <packages>
-<package name="WEBP88_RJ45">
+<package name="WEBP88_RJ45_DOUBLE">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
 <pad name="RJ4512" x="-11.43" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <pad name="RJ4514" x="-8.89" y="5.05" drill="0.9" shape="square" rot="R270"/>
@@ -75,10 +75,6 @@
 <pad name="RJ4524" x="5.08" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <pad name="RJ4526" x="7.62" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <pad name="RJ4528" x="10.16" y="5.05" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ4511" x="-12.7" y="7.59" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ45110" x="-1.27" y="5.05" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ4521" x="1.27" y="7.59" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ45210" x="12.7" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <hole x="-12.7" y="-1.3" drill="3.25"/>
 <hole x="12.7" y="-1.3" drill="3.25"/>
 <hole x="-15.38" y="-4.35" drill="1.7"/>
@@ -89,8 +85,8 @@
 <wire x1="-15.62" y1="-9.2" x2="-15.62" y2="9.2" width="0.127" layer="21"/>
 <text x="-15.51" y="9.74" size="1.27" layer="25">&gt;NAME</text>
 <text x="-15.76" y="-11.17" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-14.49" y="7.18" size="0.8128" layer="27">1</text>
-<text x="13.82" y="4.56" size="0.8128" layer="27">10</text>
+<text x="-13.22" y="4.64" size="0.8128" layer="21">2</text>
+<text x="12.55" y="7.1" size="0.8128" layer="21">9</text>
 </package>
 <package name="PTR_AK700_2_5.0">
 <description>Šroubovací svorkovnice do DPS, zelená.
@@ -140,9 +136,30 @@ discharge (ESD).</description>
 <text x="-3.8" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-4.69" y="4.81" size="0.5" layer="21">TXD</text>
 </package>
+<package name="WEBP88_RJ45_SINGLE">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<pad name="RJ45_1" x="-3.57" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_3" x="-1.53" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_5" x="0.51" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_7" x="2.55" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_2" x="-2.55" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_4" x="-0.51" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_6" x="1.53" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_8" x="3.57" y="1.87" drill="0.8" shape="square"/>
+<hole x="-7.5" y="-0.43" drill="2.36"/>
+<hole x="7.5" y="-0.43" drill="2.36"/>
+<wire x1="-7.5" y1="6.43" x2="7.5" y2="6.43" width="0.127" layer="21"/>
+<wire x1="7.5" y1="6.43" x2="7.5" y2="-6.43" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-6.43" x2="-7.5" y2="-6.43" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-6.43" x2="-7.5" y2="6.43" width="0.127" layer="21"/>
+<text x="-5.207" y="3.81" size="1.27" layer="21">1</text>
+<text x="4.445" y="1.27" size="1.27" layer="21">8</text>
+<text x="-7.62" y="6.731" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-8.001" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
-<symbol name="WEBP88_RJ45">
+<symbol name="WEBP88_RJ45_DOUBLE">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
 <wire x1="-30.48" y1="7.62" x2="-30.48" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-30.48" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -217,15 +234,32 @@ discharge (ESD).</description>
 <text x="-12.7" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="WEBP88_RJ45_SINGLE">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="RJ45_1" x="-17.78" y="7.62" length="middle"/>
+<pin name="RJ45_2" x="-17.78" y="2.54" length="middle"/>
+<pin name="RJ45_3" x="-17.78" y="-2.54" length="middle"/>
+<pin name="RJ45_4" x="-17.78" y="-7.62" length="middle"/>
+<pin name="RJ45_8" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="RJ45_7" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="RJ45_6" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="RJ45_5" x="17.78" y="7.62" length="middle" rot="R180"/>
+<text x="-12.446" y="10.668" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.446" y="-11.938" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="WEBP88">
+<deviceset name="WEBP88_D">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
 <gates>
-<gate name="G$1" symbol="WEBP88_RJ45" x="0" y="0"/>
+<gate name="G$1" symbol="WEBP88_RJ45_DOUBLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="GME" package="WEBP88_RJ45">
+<device name="DOUBLE" package="WEBP88_RJ45_DOUBLE">
 <connects>
 <connect gate="G$1" pin="RJ4512" pad="RJ4512"/>
 <connect gate="G$1" pin="RJ4513" pad="RJ4513"/>
@@ -301,6 +335,29 @@ discharge (ESD).</description>
 <connect gate="G$1" pin="TXD" pad="TXD"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VSS" pad="VSS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WEBP88_S">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<gates>
+<gate name="G$1" symbol="WEBP88_RJ45_SINGLE" x="-12.7" y="10.16"/>
+</gates>
+<devices>
+<device name="SINGLE" package="WEBP88_RJ45_SINGLE">
+<connects>
+<connect gate="G$1" pin="RJ45_1" pad="RJ45_1"/>
+<connect gate="G$1" pin="RJ45_2" pad="RJ45_2"/>
+<connect gate="G$1" pin="RJ45_3" pad="RJ45_3"/>
+<connect gate="G$1" pin="RJ45_4" pad="RJ45_4"/>
+<connect gate="G$1" pin="RJ45_5" pad="RJ45_5"/>
+<connect gate="G$1" pin="RJ45_6" pad="RJ45_6"/>
+<connect gate="G$1" pin="RJ45_7" pad="RJ45_7"/>
+<connect gate="G$1" pin="RJ45_8" pad="RJ45_8"/>
 </connects>
 <technologies>
 <technology name=""/>
