@@ -469,7 +469,7 @@ discharge (ESD).</description>
 <gate name="G$1" symbol="DC-JACK-GK0.65" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="SMALL" package="DC-JACK-GK0.65">
+<device name="S" package="DC-JACK-GK0.65">
 <connects>
 <connect gate="G$1" pin="GND1" pad="GND1"/>
 <connect gate="G$1" pin="GND2" pad="GND2"/>
