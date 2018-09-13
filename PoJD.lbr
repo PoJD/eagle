@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.127" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -195,6 +195,32 @@ discharge (ESD).</description>
 <text x="-0.508" y="-2.794" size="0.8128" layer="21">GND</text>
 <text x="4.8006" y="-1.27" size="0.8128" layer="21" rot="R90">VCC</text>
 </package>
+<package name="DC-JACK-GK2.1">
+<description>Napájecí souosý konektor do DPS 2,1mm vidlice. Imax=3A. https://www.gme.cz/napajeci-souosy-konektor-pc-gk2-1</description>
+<pad name="GND1" x="0" y="0" drill="0.6" diameter="2.2" shape="long" rot="R90"/>
+<pad name="GND2" x="4" y="-4.5" drill="0.6" diameter="2.2" shape="long"/>
+<pad name="VCC" x="6.75" y="0" drill="0.6" diameter="2.2" shape="long" rot="R90"/>
+<wire x1="-6.75" y1="4.5" x2="6.75" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6.75" y1="4.5" x2="6.75" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-4.5" x2="-6.75" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-4.5" x2="-6.75" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="1.25" x2="0.75" y2="1.25" width="0" layer="46"/>
+<wire x1="0.75" y1="1.25" x2="0.75" y2="-1.25" width="0" layer="46"/>
+<wire x1="0.75" y1="-1.25" x2="-0.75" y2="-1.25" width="0" layer="46"/>
+<wire x1="-0.75" y1="1.25" x2="-0.75" y2="-1.25" width="0" layer="46"/>
+<wire x1="2.75" y1="-3.75" x2="5.25" y2="-3.75" width="0" layer="46"/>
+<wire x1="5.25" y1="-3.75" x2="5.25" y2="-5.25" width="0" layer="46"/>
+<wire x1="5.25" y1="-5.25" x2="2.75" y2="-5.25" width="0" layer="46"/>
+<wire x1="2.75" y1="-3.75" x2="2.75" y2="-5.25" width="0" layer="46"/>
+<wire x1="6" y1="1.25" x2="7.5" y2="1.25" width="0" layer="46"/>
+<wire x1="7.5" y1="1.25" x2="7.5" y2="-1.25" width="0" layer="46"/>
+<wire x1="7.5" y1="-1.25" x2="6" y2="-1.25" width="0" layer="46"/>
+<wire x1="6" y1="-1.25" x2="6" y2="1.25" width="0" layer="46"/>
+<text x="-6.8" y="4.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.35" y="-1.27" size="0.8128" layer="21" rot="R90">GND</text>
+<text x="-0.846" y="-4.2" size="0.8128" layer="21">GND</text>
+<text x="5.4" y="-1.27" size="0.8128" layer="21" rot="R90">VCC</text>
+</package>
 </packages>
 <symbols>
 <symbol name="WEBP88_RJ45_DOUBLE">
@@ -306,6 +332,29 @@ discharge (ESD).</description>
 </symbol>
 <symbol name="DC-JACK-GK0.65">
 <description>Napájecí souosý konektor PC-GK0.65. https://www.gme.cz/napajeci-souosy-konektor-pc-gk0-65</description>
+<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="-0.762" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-3.302" y1="-2.54" x2="-1.778" y2="1.27" layer="94"/>
+<pin name="VCC" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="GND2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="GND1" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="-2.54"/>
+<vertex x="2.032" y="-1.27"/>
+<vertex x="3.048" y="-1.27"/>
+</polygon>
+</symbol>
+<symbol name="DC-JACK-GK2.1">
+<description>Napájecí souosý konektor do DPS 2,1mm vidlice. Imax=3A.
+https://www.gme.cz/napajeci-souosy-konektor-pc-gk2-1</description>
 <wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -465,6 +514,24 @@ discharge (ESD).</description>
 </gates>
 <devices>
 <device name="S" package="DC-JACK-GK0.65">
+<connects>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC-JACK-GK2.1">
+<description>Napájecí souosý konektor do DPS 2,1mm vidlice. Imax=3A. https://www.gme.cz/napajeci-souosy-konektor-pc-gk2-1</description>
+<gates>
+<gate name="G$1" symbol="DC-JACK-GK2.1" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="S" package="DC-JACK-GK2.1">
 <connects>
 <connect gate="G$1" pin="GND1" pad="GND1"/>
 <connect gate="G$1" pin="GND2" pad="GND2"/>
