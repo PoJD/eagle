@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -97,14 +97,13 @@ Jmenovitý proud = 24A
 Orientace vodiče = vertikální
 Možnost spojování = ano
 Výrobce PTR</description>
-<wire x1="-5" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
-<wire x1="5" y1="12" x2="5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="12" x2="-5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.127" layer="21"/>
-<pad name="GND" x="-2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
-<pad name="INPUT" x="2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
-<text x="-3.9" y="12.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.757" y="8.995" size="0.8128" layer="21">GND</text>
+<wire x1="-5" y1="11.1" x2="5" y2="11.1" width="0.127" layer="21"/>
+<wire x1="5" y1="11.1" x2="5" y2="-11.1" width="0.127" layer="21"/>
+<wire x1="-5" y1="11.1" x2="-5" y2="-11.1" width="0.127" layer="21"/>
+<wire x1="-5" y1="-11.1" x2="5" y2="-11.1" width="0.127" layer="21"/>
+<pad name="IN1" x="-2.5" y="10" drill="1.3" diameter="2" shape="square"/>
+<pad name="IN2" x="2.5" y="10" drill="1.3" diameter="2" shape="square"/>
+<text x="-4.6" y="11.3" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="MCP2561_PDIP">
 <description>High-Speed CAN Transceiver
@@ -282,8 +281,8 @@ Výrobce PTR</description>
 <wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="-10.16" y="2.54" length="middle"/>
-<pin name="INPUT" x="-10.16" y="-2.54" length="middle"/>
+<pin name="IN1" x="-10.16" y="2.54" length="middle"/>
+<pin name="IN2" x="-10.16" y="-2.54" length="middle"/>
 <text x="-4.572" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -460,8 +459,8 @@ Výrobce PTR</description>
 <devices>
 <device name="GME" package="PTR_AK700_2_5.0">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="INPUT" pad="INPUT"/>
+<connect gate="G$1" pin="IN1" pad="IN1"/>
+<connect gate="G$1" pin="IN2" pad="IN2"/>
 </connects>
 <technologies>
 <technology name=""/>
